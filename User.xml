@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test"  enabled="false">
+  <classes>
+  <class name="Xira.User"/>
+  </classes>
+  </test>
+  
+  <!-- create session and get User -->
+  <test thread-count="5" name="Test1" enabled="false">
+  <classes>
+  <class name="Xira.User">
+  <methods>
+  <include name="createSession"/>
+  <include name="getUser"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <!-- create session and update User -->
+  <test thread-count="5" name="Test2" enabled="false">
+  <classes>
+  <class name="Xira.User">
+  <methods>
+  <include name="createSession"/>
+  <include name="updateUser"/>
+  </methods>
+  </class>
+  
+  </classes>
+  </test>
+  
+  <!-- Create Session and Change Password -->
+  <test thread-count="5" name="Test3" enabled="true">
+  <classes>
+  <class name="Xira.User">
+ <methods>
+ <include name="createSession"/>
+ <include name="changePassword"/>
+ 
+ </methods>
+
+  </class>
+  </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->
+

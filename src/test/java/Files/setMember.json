@@ -1,0 +1,109 @@
+{
+    "MemberDetailStatusResponse": {
+        "MemberDetailResponse": {
+            "AddressId": 50127883,
+            "AddressLine1": "382 Channel Dr",
+            "AddressLine2": "",
+            "AddressStatusCode": "VALIDOK",
+            "CarrierRoute": "C029",
+            "City": "Port Washington",
+            "CountryCode": "USA",
+            "CustId": 0,
+            "DateOfBirth": "04/13/1980",
+            "Email": "scott.cloud@pchmail.com",
+            "EmailStatusCode": "VALIDOK",
+            "FirstEverRegDate": "/Date(1558449944150-0400)/",
+            "FirstName": ${firstname},
+            "GlobalMemberToken": "76fb876a-735f-4297-aea9-f816bd371d3e",
+            "GuestName": "Guest71046751",
+            "IsNameAddressIncomplete": false,
+            "IsPasswordPresent": false,
+            "IsTestAccount": true,
+            "LastName": "Cloud",
+            "MatchCode": "3506780CLD CHA382 SO4 ",
+            "NameStatusCode": "VALIDOK",
+            "OnlineAccountToken": "76fb876a-735f-4297-aea9-f816bd371d3e",
+            "OnlineFileStatusCode": 44,
+            "ScreenName": "",
+            "State": "NY",
+            "StreamNumber": 8,
+            "Title": "Mr.",
+            "Zip2": "82",
+            "Zip4": "2219",
+            "ZipCode": "11050"
+        },
+        "Preferences": null,
+        "RegistrationStatusResponses": [
+            {
+                "AppCode": "PCHCOM",
+                "DateCreated": "/Date(1558449944150-0400)/",
+                "IsEverRegistered": true,
+                "IsNewUser": false
+            }
+        ],
+        "SubscriptionStatusResponses": [
+            {
+                "CurrentEmailOptInStatusCode": 6,
+                "IsEverSubscribed": true,
+                "IsMailable": true,
+                "SubscriptionCode": "BLINGO"
+            },
+            {
+                "CurrentEmailOptInStatusCode": 26,
+                "IsEverSubscribed": true,
+                "IsMailable": true,
+                "SubscriptionCode": "PCHCOM"
+            }
+        ]
+    },
+    "ValidationResponses": {
+        "AddressSuggestions": [
+            {
+                "Address": {
+                    "AddressComment": null,
+                    "AddressLine1":"382 Channel Drive",
+                    "AddressLine2": "",
+                    "CarrierRoute": "C029",
+                    "City": "Port Washington",
+                    "State": "NY",
+                    "Zip2": "82",
+                    "Zip4": "2219",
+                    "ZipCode": "11050"
+                }
+            }
+        ],
+        "AddressValidationResponse": {
+            "FailureFieldCodes": null,
+            "Responses": null,
+            "StatusResponse": {
+                "Code": 83,
+                "Message": ""
+            }
+        },
+        "EmailSuggestions": null,
+        "EmailValidationResponse": {
+            "FailureFieldCodes": null,
+            "Responses": [
+                {
+                    "Code": 2032,
+                    "Message": "",
+                    "FieldCode": 20
+                }
+            ],
+            "StatusResponse": {
+                "Code": 82,
+                "Message": ""
+            }
+        },
+        "FieldOrDatabaseValidationResponse": {
+            "FailureFieldCodes": null,
+            "Responses": null,
+            "StatusResponse": {
+                "Code": 82,
+                "Message": ""
+            }
+        },
+        "IsSkip": false,
+        "IsValid": true
+    }
+}

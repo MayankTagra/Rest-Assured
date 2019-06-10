@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test" >
+  <groups>
+  <define name="all">
+  <include name="functest"/>
+  <include name="checkintest"/>
+  <include name="linux"/>
+  <include name="windows"/>
+  </define>
+  
+  <define name="functionallity">
+  <include name="functest"/>
+  <include name="checkintest"/>
+  </define>
+  
+  <define name="os">
+  <include name="windows"/>
+  <include name="linux"/>
+  </define>
+  
+ <!-- An importnant precaution you cannot use exclude under define -->
+  
+  <run>
+  <include name="OS"></include>
+
+  </run>
+  </groups>
+  
+  <classes>
+  <class name="RestFramework.GroupTestExample">
+  <methods>
+  <include name="testSalutationMessage"/>
+  </methods>
+  </class>
+  </classes>
+	
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

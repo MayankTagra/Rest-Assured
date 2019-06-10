@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6497" started-at="2019-06-10T09:39:32Z" finished-at="2019-06-10T09:39:38Z">
+    <groups>
+    </groups>
+    <test name="Test3" duration-ms="6497" started-at="2019-06-10T09:39:32Z" finished-at="2019-06-10T09:39:38Z">
+      <class name="Xira.Projects">
+        <test-method status="PASS" signature="createSession()[pri:0, instance:Xira.Projects@77cd7a0]" name="createSession" duration-ms="4418" started-at="2019-06-10T15:09:32Z" finished-at="2019-06-10T15:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSession -->
+        <test-method status="PASS" signature="updateProject(java.lang.String)[pri:0, instance:Xira.Projects@77cd7a0]" name="updateProject" duration-ms="1999" started-at="2019-06-10T15:09:36Z" finished-at="2019-06-10T15:09:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProject -->
+      </class> <!-- Xira.Projects -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>

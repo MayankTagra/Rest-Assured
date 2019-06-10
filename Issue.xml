@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<test thread-count="5" name="test1" enabled="false">
+<classes>
+<class name="Xira.Issue"/>
+</classes>
+</test>
+
+
+<!-- Create Session And getIssue -->
+<test thread-count="5" name="test2" enabled="false">
+<parameter name="issuekey" value="RES-2"/>
+
+<classes>
+<class name="Xira.Issue">
+<methods>
+<include name="createSession"/>
+<include name="getIssue"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<!-- create session and create issue-->
+<test thread-count="5" name="test3" enabled="false">
+<classes>
+<class name="Xira.Issue">
+<methods>
+<include name="createSession"/>
+<include name="deleteIssue"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<!-- create session and delete issue -->
+<test thread-count="5" name="test4" enabled="false">
+<classes>
+<class name="Xira.Issue">
+<methods>
+<include name="createSession"/>
+<include name=""/>
+</methods>
+</class>
+</classes>
+</test>
+
+<!-- create session and update issue -->
+<test thread-count="5" name="test5" enabled="true">
+<parameter name="issuekey" value="RES-3"/>
+<classes>
+<class name="Xira.Issue">
+<methods>
+<include  name="createSession"/>
+<include name="updateIssue"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+
+
+
+
+
+</suite> <!-- Suite -->
+

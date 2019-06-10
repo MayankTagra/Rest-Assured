@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test" enabled="false" >
+  </test> <!-- Test -->
+  
+  <!-- create session and get All projects -->
+  <test thread-count="5" name="Test1" enabled="false">
+  <classes>
+  <class name="Xira.Projects">
+  <methods>
+  <include  name="createSession"/>
+  <include name="getAllProjects"/>
+  
+
+  </methods>
+  
+  </class>
+  </classes>
+  </test>
+  
+  <!-- Get current project -->
+  <test thread-count="5" name="Test2" enabled="false">
+  <classes>
+  <class name="Xira.Projects">
+  <methods>
+  <include name="createSession"/>
+  <include name="getProject"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  
+  <!-- create Session and Update your Current Project -->
+  <test thread-count="5" name="Test3" enabled="true">
+  <parameter name="projectkey" value="RES"/>
+  <classes>
+  <class name="Xira.Projects">
+  <methods>
+  <include name="createSession"/>
+  <include name="updateProject"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <!-- create session and create project -->
+<test thread-count="5" name="Test4" enabled="false">
+<classes>
+<class name="Xira.Projects">
+<methods>
+<include name="createSession"/>
+<include name="createProject"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<!-- create session and delete project -->
+<test thread-count="5" name="Test5" enabled="false">
+<parameter name="projectId" value="11111"/>
+<classes>
+<class name="Xira.Projects">
+<methods>
+<include name="createSession"/>
+<include  name="deleteProject"/>
+</methods>
+</class>
+
+</classes>
+</test>
+
+<!-- create session and  -->
+<test thread-count="5" name="Test6" enabled="false">
+<classes>
+<class name="Xira.Projects">
+<methods>
+<include name="createSession"/>
+<include name="projectRoles"/>
+</methods>
+</class>
+</classes>
+</test>
+  
+</suite> <!-- Suite -->
+

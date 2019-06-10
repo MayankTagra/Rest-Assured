@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test"  enabled="false">
+	<classes>
+	<class name="Xira.Comp"/>
+	</classes>
+	
+  </test> <!-- Test -->
+  <!-- Create Component -->
+  <test thread-count="5" name="Test1" enabled="true">
+  <classes>
+  <class name="Xira.Comp">
+  <methods>
+  <include name="createSession"/>
+  <include name="createComponent"/>
+  
+  </methods>
+  
+  </class>
+  </classes>
+  </test>
+  
+  <!-- Update Component -->
+  <test thread-count="5" name="Test2" enabled="false">
+  <classes>
+  <class name="Xira.Comp">
+  <methods>
+  <include name="createSession"/>
+  <include name="updateComponent"/>
+  </methods>
+  </class>
+  </classes>
+  
+  </test>
+  
+  <!-- Get Details of a Component -->
+  <test thread-count="5" name="Test3" enabled="false">
+  <classes>
+  <class name="Xira.Comp">
+ <methods>
+ <include name="createSession"/>
+ <include name="getComponent"/>
+ </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <!-- Delete Component -->
+    <test thread-count="5" name="Test4" enabled="false">
+  <classes>
+  <class name="Xira.Comp">
+ <methods>
+ <include name="createSession"/>
+ <include name="deleteComponent"/>
+ </methods>
+  </class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
+

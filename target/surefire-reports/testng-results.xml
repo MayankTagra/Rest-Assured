@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7768" started-at="2019-06-07T13:08:07Z" finished-at="2019-06-07T13:08:14Z">
+    <groups>
+    </groups>
+    <test name="Test4" duration-ms="7768" started-at="2019-06-07T13:08:07Z" finished-at="2019-06-07T13:08:14Z">
+      <class name="Xira.Projects">
+        <test-method status="PASS" signature="createSession()[pri:0, instance:Xira.Projects@617c74e5]" name="createSession" duration-ms="6093" started-at="2019-06-07T18:38:07Z" finished-at="2019-06-07T18:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSession -->
+        <test-method status="PASS" signature="createProject()[pri:0, instance:Xira.Projects@617c74e5]" name="createProject" duration-ms="1624" started-at="2019-06-07T18:38:13Z" finished-at="2019-06-07T18:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProject -->
+      </class> <!-- Xira.Projects -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+</testng-results>
